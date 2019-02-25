@@ -84,7 +84,8 @@ options:
         WARNING: if the stack does not exist, it will be created without changeset. If the state is absent, the stack will be deleted immediately with no
         changeset."
     type: bool
-    default: 'no'
+    default: 'no'    
+    choices: [ yes, no ]
     version_added: "2.4"
   changeset_name:
     description:
